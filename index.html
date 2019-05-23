@@ -1,0 +1,38 @@
+<html>
+    <head>
+
+        <style type='text/css'>
+            div#textid {
+                background-color: white;
+                color: black;
+            }
+        
+        </style>
+    </head>
+    <body>
+            <body background="https://www.mdsci.org/wp-content/uploads/2018/05/Cruise-the-cosmos.jpg">
+        <h1 style="text-align:center; color:#FFFFFF; font-size:75";>Physics</h1>
+        <body vlink="white"></body>
+     <a href="articles.html"><button>Go To Articles</button></a>
+     <a href="definitions.html"><button>Go To Dictionary</button></a>
+     <a href="calculator.html"><button>Go To Calculator</button></a>   
+     <button onclick="changeDiv()">Physics Fun Facts </button>  
+     <div id = "textid"></div>
+    <script src='LList.js'></script>
+    <script type='text/javascript'>
+
+        function changeDiv(){
+            // Grab div by ID
+            let elem = document.getElementById('textid');
+            let str = funfacts.get(Math.floor((Math.random())*funfacts.size))
+            // Change textContext of div here
+            elem.innerHTML = str;
+        }    
+        
+        
+    </script>
+    </body> 
+  
+</html>
+
+
